@@ -1,8 +1,11 @@
 # cricket
 Cricket score board
+
 [x] github repo
+
 [x] project requirements
-    [x] take some sample/idea from internet
+    
+  [x] take some sample/idea from internet
         - match fixture - add teams (A, B), players etc
         - team A Bats first and score boards shows the score
         - simple score board that shows current score
