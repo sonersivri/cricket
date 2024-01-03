@@ -20,21 +20,21 @@ Cricket score board
     - follow BDD
  ```
 Feature: Runs
-    Scenerio store runs for team
+    Scenario store runs for team
         Given when player 1 score one run
         Then 1 run should be added to the team's score
       
-    Scenerio: store runs for player
+    Scenario store runs for player
         Given when player 1 score one run
         Then 1 run should be added to the player's score
 
 Feature: Strike
-    Scenerio switching the strike
+    Scenario switching the strike
         Given when player 1 score one run
         Then player 2 takes the strike
       
 Feature: Balls
-    Scenerio reduce remaing balls in current over
+    Scenario reduce remaing balls in current over
         Given when bowler deliver's a ball
         Then remaining balls in current over should reduce by one
       
