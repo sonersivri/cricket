@@ -38,12 +38,12 @@ Feature: Balls
         Given when bowler deliver's a ball
         Then remaining balls in current over should reduce by one
       
-    Scenerio: 
+    Scenerio reduce number of remaing balls in current over
         Given when bowler deliver's a ball
         Then remaining balls in current over should reduce by one
 
-    Feature: Wickets
-        Scenerio update wicket count
+Feature: Wickets
+    Scenerio update wicket count
         When bowler takes a wicket
         Then the current wickets count gets reduced by one
 
