@@ -18,32 +18,35 @@ Cricket score board
           - runs/wickets (current over/total overs)
 - decide way to program/work
     - follow BDD
-        - feature: Runs
-            - scenerio: store runs for team
-              given: when player 1 score one run
-              then: 1 run should be added to the team's score
-              
-            - scenerio: store runs for player
-              given: when player 1 score one run
-              then: 1 run should be added to the player's score
+ ```
+Feature: Runs
+    Scenerio store runs for team
+        Given when player 1 score one run
+        Then 1 run should be added to the team's score
+      
+Scenerio: store runs for player
+    Given when player 1 score one run
+    Then 1 run should be added to the player's score
 
-        - feature: Strike
-            - scenerio: switching the strike
-              given: when player 1 score one run
-              then: player 2 takes the strike
-              
-        - feature: Balls
-            - scenerio: reduce remaing balls in current over
-              given: when bowler deliver's a ball
-              then: remaining balls in current over should reduce by one
-              
-            - scenerio: 
-              given: when bowler deliver's a ball
-              then: remaining balls in current over should reduce by one
+Feature: Strike
+    Scenerio switching the strike
+    Given when player 1 score one run
+    Then player 2 takes the strike
+      
+Feature: Balls
+    Scenerio reduce remaing balls in current over
+    Given when bowler deliver's a ball
+    Then remaining balls in current over should reduce by one
+      
+Scenerio: 
+    Given when bowler deliver's a ball
+    Then remaining balls in current over should reduce by one
 
-      - feature: Wickets
-          - scenerio: update wicket count
-            when: bowler takes a wicket
-            then: the current wickets count gets reduced by one
+Feature: Wickets
+    Scenerio update wicket count
+    When bowler takes a wicket
+    Then the current wickets count gets reduced by one
+
+```
                       
     - follow TDD
