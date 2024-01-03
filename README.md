@@ -18,8 +18,32 @@ Cricket score board
           - runs/wickets (current over/total overs)
 - decide way to program/work
     - follow BDD
-        - feature: store runs for team
-            - scenerio: as current team scores runs they must be stored
-              given: team A is playing, when player 1 scores 2 runs then 2 runs should be added to current score of Team A
-                                        and to the score of player 1 as well.
+        - feature: Runs
+            - scenerio: store runs for team
+              given: when player 1 score one run
+              then: 1 run should be added to the team's score
+              
+            - scenerio: store runs for player
+              given: when player 1 score one run
+              then: 1 run should be added to the player's score
+
+        - feature: Strike
+            - scenerio: switching the strike
+              given: when player 1 score one run
+              then: player 2 takes the strike
+              
+        - feature: Balls
+            - scenerio: reduce remaing balls in current over
+              given: when bowler deliver's a ball
+              then: remaining balls in current over should reduce by one
+              
+            - scenerio: 
+              given: when bowler deliver's a ball
+              then: remaining balls in current over should reduce by one
+
+      - feature: Wickets
+          - scenerio: update wicket count
+            when: bowler takes a wicket
+            then: the current wickets count gets reduced by one
+                      
     - follow TDD
