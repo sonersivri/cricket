@@ -1,7 +1,5 @@
-package rpn;
+package com.zextras.cricket;
 
-import com.zextras.cricket.Player;
-import com.zextras.cricket.Team;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -20,11 +18,20 @@ public class Stepdefs {
 
     @When("player score one run")
     public void when_player_1_score_one_run() {
-       player.scoreRun(1);
+//       player.scoreRun(1);
     }
 
     @Then("1 run should be added to the team's score")
     public void then_1_run_should_be_added_to_the_teams_score() {
-        Assertions.assertEquals(1, team.getScore());
+        Assertions.assertEquals(1, team.getTotalScore());
+    }
+
+    @Given("when player {int} score one run")
+    public void whenPlayerScoreOneRun(int arg0) {
+        
+    }
+
+    @Then("{int} run should be added to the player's score")
+    public void runShouldBeAddedToThePlayerSScore(int arg0) {
     }
 }

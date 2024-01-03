@@ -1,10 +1,23 @@
 package com.zextras.cricket;
 
-public class Team {
+import java.util.HashSet;
+import java.util.Set;
+
+public class Team extends ScoreHolder{
+
+    Set<Player> playerSet = new HashSet<>();
     public void addPlayer(Player player) {
+        playerSet.add(player);
     }
 
-    public int getScore() {
-        return 0;
+    public int getTotalScore() {
+        int score = 0;
+        for (Player player : playerSet) {
+            score += player.getTotalScore();
+        }
+        for (Integer teamScore: scoreMap.values()) {
+            score += teamScore;
+        }
+        return score;
     }
 }
