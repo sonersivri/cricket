@@ -1,7 +1,4 @@
-package com.zextras.cricket;
-
-import java.util.HashMap;
-import java.util.Map;
+package com.zextras.cricket.model;
 
 public class Player extends ScoreHolder{
 

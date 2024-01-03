@@ -1,5 +1,9 @@
-package com.zextras.cricket;
+package com.zextras.cricket.model;
 
+import com.zextras.cricket.model.Player;
+import com.zextras.cricket.model.RunScore;
+import com.zextras.cricket.model.Team;
+import com.zextras.cricket.model.WicketScore;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -11,7 +15,7 @@ public class TeamTest {
 
     @BeforeEach
     void beforeEach() {
-        team = new Team();
+        team = new Team("Name");
         player = new Player();
         team.addPlayer(player);
     }

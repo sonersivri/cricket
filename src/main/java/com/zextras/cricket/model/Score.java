@@ -1,4 +1,4 @@
-package com.zextras.cricket;
+package com.zextras.cricket.model;
 
 public interface Score {
     int getScore();

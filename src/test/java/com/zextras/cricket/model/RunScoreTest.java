@@ -1,5 +1,6 @@
-package com.zextras.cricket;
+package com.zextras.cricket.model;
 
+import com.zextras.cricket.model.RunScore;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

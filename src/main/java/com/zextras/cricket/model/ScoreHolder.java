@@ -1,4 +1,4 @@
-package com.zextras.cricket;
+package com.zextras.cricket.model;
 
 import java.util.HashMap;
 import java.util.Map;

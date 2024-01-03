@@ -1,4 +1,4 @@
-package com.zextras.cricket;
+package com.zextras.cricket.model;
 
 public class RunScore implements PlayerScore {
 

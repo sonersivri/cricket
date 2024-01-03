@@ -1,11 +1,20 @@
-package com.zextras.cricket;
+package com.zextras.cricket.model;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class Team extends ScoreHolder{
+public class Team extends ScoreHolder {
+    private String name;
 
     Set<Player> playerSet = new HashSet<>();
+
+    public Team() {
+    }
+
+    public Team(final String name) {
+        this.name = name;
+    }
+
     public void addPlayer(Player player) {
         playerSet.add(player);
     }
@@ -19,5 +28,9 @@ public class Team extends ScoreHolder{
             score += teamScore;
         }
         return score;
+    }
+
+    public String getName() {
+        return name;
     }
 }

@@ -1,5 +1,7 @@
 package com.zextras.cricket;
 
+import com.zextras.cricket.model.Player;
+import com.zextras.cricket.model.Team;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
