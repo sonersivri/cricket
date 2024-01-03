@@ -6,10 +6,15 @@ Cricket score board
 [x] project requirements
     
   [x] take some sample/idea from internet
+        
         - match fixture - add teams (A, B), players etc
+        
         - team A Bats first and score boards shows the score
+        
         - simple score board that shows current score
+          
           - teams who are playing against each other
+          
           - runs/wickets (current over/total overs)
 - decide way to program/work
     - follow BDD
